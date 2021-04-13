@@ -34,4 +34,21 @@ Summary
 Conclusion
 ^^^^^^^^^^
    - The Process ID for the arbiter and the worker will also be different.
-   
+
+3. Additional configuration
+---------------------------
+
+Summary
+^^^^^^^
+   - Gunicorn is production ready web server.
+      - But application itself is not yet,
+         - as DEBUG should never be enabled in production.
+         - as SECRET_KEY is also stored temporary with generated random.
+
+Conclusion
+^^^^^^^^^^
+   - Twelve Factor App is Methodology for HTTP service applications.
+      - This methodology recommends **separating configuration and code as well as storing configurations in environment variables.**
+      - This make Easy to chang on the deployment and configuration OS-agnostic.
+
+
