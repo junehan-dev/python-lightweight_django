@@ -52,3 +52,10 @@ Conclusion
       - This make Easy to chang on the deployment and configuration OS-agnostic.
 
 
+4. Resuable Template
+--------------------
+
+Summary
+^^^^^^^
+   - command ``django-admin startproject config .`` actually generates default templates, but we can customize our own.
+   - ``django-admin startproject myproject --template=directory_name``
